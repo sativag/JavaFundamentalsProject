@@ -1,7 +1,11 @@
 package com.java.project;
 
+import java.util.List;
+
 public interface GadgetInterface {
-	public Widget getWidget();
+	
+	public List<Widget> getWidgets(SurfaceColor color);
+	public String getSerialNumber();
 	public SurfaceColor getColor();
 	public float getPrice();
 	public String getPowerSource();

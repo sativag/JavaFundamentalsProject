@@ -5,6 +5,6 @@ public interface Widget {
 	public String  getSprings();
 	public String  getLevers();
 	SurfaceColor getColor();
-	
+	public String getSerialNumber();
 
 }

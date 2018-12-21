@@ -1,8 +1,9 @@
 package com.java.project;
 
-public abstract class MediumWidget extends AbstractWidget {
+public class MediumWidget extends AbstractWidget {
 	public MediumWidget(SurfaceColor color) {
 		super(color);
+		this.serialNumber = SerialNumbers.getInstance().getNextSerial(SerialNumbers.productTypes.MediumWidget);
 	}
 	
 	public String getGears() {
@@ -16,5 +17,4 @@ public abstract class MediumWidget extends AbstractWidget {
 	public String getSprings() {
 		return "5 Springs";
 	}
-
 }

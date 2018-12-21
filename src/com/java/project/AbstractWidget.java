@@ -3,7 +3,7 @@ package com.java.project;
 public abstract class AbstractWidget implements Widget {
 
 	private SurfaceColor color;
-	
+	protected String serialNumber;
 	
 	public AbstractWidget(SurfaceColor color) {
 		this.color = color;
@@ -12,6 +12,10 @@ public abstract class AbstractWidget implements Widget {
 	@Override
 	public SurfaceColor getColor() {
 		return color;
+	}
+	
+	public String getSerialNumber() {
+		return serialNumber;
 	}
 	
 }
